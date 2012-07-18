@@ -7,6 +7,7 @@ alert("JavaScript works!");
 
 
 //Global Variables
+var countdown   = [5, 4, 3, 2, 1, 0, "Go!"];
 var drivers     = ["Takushito" , "Kyoto" , "Kurasaki" , "Taisuke"]
 var vehicles    = ["Toyota Supra" , "Nissan Skyline R34" , "Audi RS8" , "Subaru WRX"]
 var track1      = "Dragon Track";
@@ -16,6 +17,8 @@ var race2       = 50000;
 var finals      = 100000;
 var dragonTrack = true;
 var ninjaTrack  = true; 
+var horsePower  = true;
+var attendance  = 48000;
 
 
 //Money Count
@@ -47,7 +50,17 @@ var conclusion = function(drifter1, drifter2, drifter3, drifter4){
 			" for making it here!");
 };
 
+//Car Details + Sponsors
+var carMods = function(){
+	var supedUp = {
+		engine: "EJ257",
+		tires : "BF Goodrich T/A",
+		turbo : "HKS Twin 3037",
+	drivetrain: "All-Wheel Drive",
+	sponsors  : ["HKS", "GReddy", "Subaru", "SPR", "Cobb Tuning"],				
+				};
 
+};
 
 
 
@@ -57,15 +70,23 @@ console.log("Welcome to the 2012 Japanese Drifting Championship. Today we have a
 
 for ( i = 0; i < drivers.length; i++){
 	console.log("Racer:" + drivers[i] + " Car:" + vehicles[i]);
-
+		if (attendance > 47000){
+			console.log("Start your engine now, Sir!");
+		};
 };
+
+
 
 //Race One Takushito vs. Kyoto
 	console.log("Our first race will pit " + drivers[0] + " versus his nemesis, " + drivers [1] + ".");
 	
 if (dragonTrack = true){
 	console.log("Please direct your attention to the Dragon Track for our first battle behind the wheel!");
+} else {
+	console.log("Looks like the Dragon Track may be undergoing maintenance from last week.");
+	
 };	
+
 	
 	console.log(drivers[1] + " takes the victory!");
 	
@@ -99,6 +120,8 @@ console.log("Okay, everyone, prepare for your grande finale: " + drivers[1] + " 
 	console.log(drivers[3] + " takes the Championship today! Let's tally up his stats today...");
 	
 console.log(raceWinner);
+console.log(carMods);
 
-	
+
+//Announcer Conclusion/Outro	
 conclusion ("Kyoto", "Kurasaki", "Taisuke", "Takushito");
