@@ -7,7 +7,7 @@ alert("JavaScript works!");
 
 
 //Global Variables
-var countdown   = [5, 4, 3, 2, 1, 0, "Go!"];
+var countdown   = [5, 4, 3, 2, 1, "Go!"];
 var drivers     = ["Takushito" , "Kyoto" , "Kurasaki" , "Taisuke"]
 var vehicles    = ["Toyota Supra" , "Nissan Skyline R34" , "Audi RS8" , "Subaru WRX"]
 var track1      = "Dragon Track";
